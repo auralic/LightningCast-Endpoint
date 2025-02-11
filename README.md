@@ -51,3 +51,13 @@ mkdir build
 cd build
 cmake ..
 make
+```
+
+## 6. Run
+
+Put LightningCastDeviceSample and SnapCastClient in the same directory and execute:
+
+```bash
+./SnapCastClient &
+./LightningCastDeviceSample
+```
