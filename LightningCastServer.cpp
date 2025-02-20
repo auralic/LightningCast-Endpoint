@@ -280,7 +280,7 @@ void LightningCastServer::Exit()
 // Method to handle service publishing
 void ServicePublisher::handle()
 {
-    std::string service_name = "LightningCastDeviceDemo";
+    std::string service_name = "LightningCastDeviceSample";
     mdns_tinysvcmdns_register(service_name.c_str(), nullptr, LIGHTNINGCASTTCPPORT, nullptr, nullptr);
     while(!stop_thread)
     {
@@ -305,7 +305,7 @@ int ServicePublisher::mdns_tinysvcmdns_register(
     // Thanks to Paul Lietar for this
     // room for name + .local + NULL
     char hostname[100 + 6];
-    strncpy(hostname, "LightningCastDeviceDemo", 99);
+    strncpy(hostname, "LightningCastDeviceSample", 99);
     // gethostname(hostname, 99);
     // according to POSIX, this may be truncated without a final NULL !
     hostname[99] = 0;

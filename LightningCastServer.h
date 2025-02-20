@@ -2,10 +2,6 @@
 #define _LIGHTNINGCASTSERVER_H
 
 #include <arpa/inet.h>
-#include <avahi-client/client.h>
-#include <avahi-client/publish.h>
-#include <avahi-common/error.h>
-#include <avahi-common/simple-watch.h>
 #include <errno.h>
 #include <fcntl.h>
 #include <ifaddrs.h>

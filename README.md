@@ -55,9 +55,9 @@ make
 
 ## 6. Run
 
-Put LightningCastDeviceSample and SnapCastClient in the same directory and execute:
+Put LightningCastDeviceSample and SnapCastClient in the same directory and execute:(hw:0,0 specifies the ALSA output device)
 
 ```bash
-./SnapCastClient &
+./SnapCastClient hw:0,0 &
 ./LightningCastDeviceSample
 ```
